@@ -1,0 +1,28 @@
+openapi: 3.1.0
+info:
+  title: Task Microservice
+  version: 1.0.0
+paths:
+  /tasks:
+    post:
+      summary: Create a new task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+              required:
+                - message
+      responses:
+        201:
+          description: Task created
+  /statistics:
+    get:
+      summary: Get service statistics
+      responses:
+        200:
+          description: Stats returned
