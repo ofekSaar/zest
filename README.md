@@ -1,6 +1,5 @@
 ## High-Level Goal
 Design and implement a self-contained microservice exposing an HTTP API that allows clients to enqueue tasks for asynchronous processing and retrieve real-time processing metrics. Each task must append a message to a shared log file, with proper synchronization for concurrent access. Implementation details (language, frameworks, storage, and queue type) are left to your discretion.
-This microservice exposes three HTTP endpoints:
 
 ## Context
 Your job is to implement the core business logic of a new microservice with two endpoints (`POST /tasks` and `GET /statistics`) —`createTask` and `getStatistics`.
